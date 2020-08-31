@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Test Rsocket page</title>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<!-- jquery -->
+	<script th:src="@{/webjars/jquery/3.1.1/jquery.min.js}"></script>
+
+	<!-- jquery-ui -->
+	<script th:src="@{/webjars/jquery-ui/1.12.1/jquery-ui.min.js}"></script>
+	<link rel="stylesheet"	th:href="@{/webjars/jquery-ui/1.12.1/jquery-ui.min.css}" />
+
+	<!-- datatables -->
+	<script
+		th:src="@{/webjars/datatables/1.10.19/js/jquery.dataTables.min.js}"></script>
+	<link rel="stylesheet"	th:href="@{/webjars/datatables/1.10.19/css/dataTables.jqueryui.min.css}" />		
+    
+</head>
+<body>
+<!--     Main web application page. React will be injected here -->
+    Test page
+    
+	<div id="react"></div>
+   	<script src="built/bundle.js"></script>
+
+
+	<br>
+	<form method="POST" th:action="@{/logout}">
+		<button type="submit">Logout</button>
+	</form>
+
+</body>
+</html>

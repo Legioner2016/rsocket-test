@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Test Rsocket page</title>
+</head>
+<body>
+<form method="POST" action="/login">
+<!-- 	Simple login page -->
+	<div style="position: relative; left: 40%; width: 20%">
+		<div style="text-align: center;">
+			Login page
+		</div>
+		<table>
+			<tbody>
+				<tr>
+					<td width="30%">
+						<label>User:&nbsp;</label>
+					</td>
+					<td>	
+						<input name="username" type="text" />
+					</td>	
+				</tr>	
+				<tr>
+					<td width="30%">
+						<label>Password:&nbsp;</label>
+					</td>
+					<td>	
+						<input name="password" type="password" />
+					</td>	
+				</tr>		
+				<tr>
+					<td width="30%"></td>
+					<td>	
+						<button type="submit">Login</button>
+					</td>	
+				</tr>
+			</tbody>	
+		</table>
+	</div>
+</form>
+
+</body>
+</html>
